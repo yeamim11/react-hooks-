@@ -10,7 +10,7 @@ const UseEffect = () => {
     // ! button ar moddha funtion call korle useEffect run hobe na, karon useEffect ta component render er por run hoy
 
     useEffect(() => {
-        console.log("useEffect run");
+        console.log("useEffect");
         // ! useEffect er moddha jodi kono function call kori tahole seta component render er por run hobe
         // ! useEffect er moddha jodi kono function call na kori tahole seta component render er por run hobe na
     },[count])
@@ -24,6 +24,7 @@ const UseEffect = () => {
                 onClick={() => { setCount((count) => count + 1) }}>
                 +
             </button>
+            
              <button
                 className='p-3 text-3xl font-bold bg-black text-white  '
                 onClick={() => {setLoading(!loaging)}}>
